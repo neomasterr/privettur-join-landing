@@ -50,7 +50,7 @@ request:
 
 ```json
 {
-    "phone": "+7",
+    "phone": "+7 (ХХХ) ХХХ-ХХ-ХХ",
     "on": true
 }
 ```
