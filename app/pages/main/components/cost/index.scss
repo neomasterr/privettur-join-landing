@@ -1,0 +1,215 @@
+.main-cost {
+    background-color: var(--color-theme-white);
+
+    &-container {
+        position: relative;
+    }
+
+    &-wrapper {
+        padding: 80px 0 32px;
+        position: relative;
+
+        @include media("md", "max") {
+            padding: 60px 0 32px;
+        }
+
+        @include media("sm", "max") {
+            padding: 40px 0 32px;
+        }
+    }
+
+    &-title {
+        font: var(--title-0-bold);
+        margin-bottom: 52px;
+
+        @include media("sm", "max") {
+            font: var(--title-1-bold);
+            margin-bottom: 32px;
+        }
+    }
+
+    &-list {
+        z-index: 1;
+        position: relative;
+        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 75px;
+
+        @include media("lg", "max") {
+            grid-gap: 16px;
+            grid-template-columns: repeat(3, 303px);
+            // overflow: auto;
+        }
+
+        @include media("md", "max") {
+            margin-bottom: 24px;
+        }
+
+        @include media("xs", "max") {
+            grid-template-columns: 1fr;
+        }
+
+        &-wrapper {
+            overflow: visible;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__item {
+        border-radius: 20px;
+        padding: 24px 40px;
+        box-shadow: var(--shadow-cost);
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-theme-white);
+        @include transition();
+        cursor: pointer;
+
+        &:hover {
+            @include media("md", "min") {
+                transform: translateY(-8px);
+            }
+        }
+
+        @include media("lg", "max") {
+            padding: 24px 20px;
+        }
+
+        @include media("xs", "max") {
+            padding: 24px 36px;
+        }
+
+        &-title {
+            font: var(--title-3-bold);
+            margin-bottom: 16px;
+        }
+
+        &-subtitle {
+            font: var(--text-2);
+            color: var(--color-text-grey);
+            margin-bottom: 16px;
+        }
+
+        &-prices {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            white-space: nowrap;
+            margin-bottom: 12px;
+        }
+
+        &-price {
+            font: var(--title-0-bold);
+            color: var(--color-theme-dark);
+        }
+
+        &-oldprice {
+            position: relative;
+            font: var(--text-1-bold);
+            color: var(--color-theme-dark);
+            margin-bottom: 4px;
+            text-decoration: line-through;
+            margin-left: 8px;
+
+            &::before {
+                content: "/";
+                display: inline;
+                content: "/";
+                display: inline;
+                position: absolute;
+                left: -9px;
+            }
+        }
+
+        &-description {
+            font: var(--text-2);
+            color: var(--color-theme-dark);
+            margin-bottom: 16px;
+        }
+
+        &-action {
+            margin-top: auto;
+            width: 100%;
+            padding: 0 16px;
+        }
+    }
+
+    &-label {
+        font: var(--text-1);
+        color: var(--color-text-grey);
+        margin-left: 40px;
+
+        @include media("lg", "max") {
+            margin-left: 20px;
+        }
+
+        @include media("xs", "max") {
+            margin-left: 36px;
+        }
+
+        a {
+            font: inherit;
+            color: inherit;
+            @include underline(var(--color-text-grey));
+        }
+    }
+
+    &-waves-decoration {
+        width: 224px;
+        height: 185px;
+        position: absolute;
+        z-index: 0;
+        background: url("/assets/img/decoration/decoration-waves-double.svg")
+            no-repeat;
+        top: 225px;
+        right: -24px;
+        z-index: 0;
+
+        @include media("lg", "max") {
+            right: -165px;
+        }
+
+        @include media("md", "max") {
+            right: -64px;
+        }
+
+        @include media("xs", "max") {
+            top: auto;
+            right: -120px;
+            bottom: 350px;
+        }
+    }
+
+    &-semicircle-decoration {
+        width: 193px;
+        height: 386px;
+        position: absolute;
+        z-index: 0;
+        background: url("/assets/img/decoration/decoration-semicircle.svg")
+            no-repeat;
+        left: 0;
+        bottom: -32px;
+        z-index: 0;
+
+        // @include media("lg", "max") {
+        //     right: -165px;
+        // }
+
+        @include media("md", "max") {
+            bottom: -64px;
+        }
+
+        @include media("xs", "max") {
+            bottom: auto;
+            top: 340px;
+        }
+
+        // @include media("xs", "max") {
+        //     top: auto;
+        //     right: -120px;
+        //     bottom: 350px;
+        // }
+    }
+}

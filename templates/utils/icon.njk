@@ -1,0 +1,16 @@
+{% macro icon(name, type, attrs, content) %}
+    {% if not type %}
+        <span data-icon="{{name}}" {% for attr, value in attrs %} {{ attr }}="{{ value }}"{% endfor %}>{{content}}</span>
+    {% elseif type == 'img' %}
+        <img src="/assets/icons/img/{{name}}.svg" {% for attr, value in attrs %} {{ attr }}="{{ value }}"{% endfor %}>
+    {% else %}
+        <span data-svg="{{name}}" {% for attr, value in attrs %} {{ attr }}="{{ value }}"{% endfor %}>
+            <svg>
+                <use href="/assets/sprite/sprite.{{type}}.svg#{{type}}-{{name}}"></use>
+            </svg>
+        </span>
+    {% endif %}
+{% endmacro %}
+
+{# {% from "components/icon_new.twig" import icon %}
+{{icon("category-#{item.url}", 'sprite.category')}} #}

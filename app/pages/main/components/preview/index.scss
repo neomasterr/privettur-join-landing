@@ -1,0 +1,208 @@
+.main-preview {
+    &-wrapper {
+        position: relative;
+        height: 808px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 90px;
+
+        @include media("lg", "max") {
+            height: 695px;
+            padding-bottom: 24px;
+        }
+
+        @include media("md", "max") {
+            height: 652px;
+        }
+
+        @include media("sm", "max") {
+            height: auto;
+            padding-bottom: 16px;
+        }
+    }
+
+    &-content {
+        max-width: 660px;
+        margin-top: auto;
+
+        @include media("sm", "max") {
+            max-width: 484px;
+            margin-top: 100px;
+        }
+    }
+
+    &-title {
+        font: var(--title-medium);
+        margin-bottom: 40px;
+
+        &-decoration {
+            font: inherit;
+            color: var(--color-theme-blue);
+        }
+
+        a {
+            font: inherit;
+            @include underline(var(--color-theme-dark), 4px, 2px);
+        }
+
+        @include media("sm", "max") {
+            font-size: 38px;
+            line-height: 54px;
+            font-weight: 700;
+        }
+    }
+
+    &-label {
+        font: var(--title-3);
+        margin-bottom: 16px;
+
+        @include media("sm", "max") {
+            font: var(--text-0);
+        }
+    }
+
+    &-form {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+
+        @include media("sm", "max") {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            display: none;
+            font: var(--text-2);
+            color: var(--color-theme-greyMedium);
+            margin-bottom: 4px;
+
+            @include media("sm", "max") {
+                display: block;
+            }
+        }
+
+        .ui-input-group {
+            @include media("sm", "max") {
+                width: 100%;
+                max-width: 336px;
+            }
+        }
+
+        input {
+            width: 320px;
+            margin-right: 16px;
+
+            @include media("sm", "max") {
+                margin-bottom: 32px;
+                width: 100%;
+                padding: 0 16px;
+                height: 40px;
+            }
+        }
+
+        @include media("sm", "max") {
+            margin-bottom: 16px;
+        }
+
+        button {
+            @include media("sm", "max") {
+                height: 40px;
+                padding: 0 24px;
+                font: var(--text-1);
+                width: 100%;
+                max-width: 336px;
+            }
+        }
+    }
+
+    &-description {
+        font: var(--text-0);
+    }
+
+    .link_green {
+        font: inherit;
+        font-weight: bold;
+    }
+
+    &-waves-decoration {
+        width: 224px;
+        height: 185px;
+        position: absolute;
+        z-index: 0;
+        background: url("/assets/img/decoration/decoration-waves-double.svg")
+            no-repeat;
+        top: 100px;
+        right: 350px;
+
+        @include media("lg", "max") {
+            right: 194px;
+        }
+
+        @include media("md", "max") {
+            right: 164px;
+        }
+
+        @include media("sm", "max") {
+            right: -128px;
+        }
+    }
+
+    &-title-decoration {
+        // width: 224px;
+        // height: 185px;
+        // position: absolute;
+        // z-index: 0;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            width: 242px;
+            height: 70px;
+            background: url("/assets/img/decoration/ellipse.svg") no-repeat;
+            position: absolute;
+            left: -8px;
+            top: -2px;
+            pointer-events: none;
+
+            @include media("sm", "max") {
+                background: url("/assets/img/decoration/ellipse-sm.svg")
+                    no-repeat;
+                // left: -8px;
+                top: 2px;
+            }
+        }
+        // top: 100px;
+        // right: 350px;
+
+        // @include media("lg", "max") {
+        //     right: 194px;
+        // }
+
+        // @include media("md", "max") {
+        //     right: 164px;
+        // }
+
+        // @include media("sm", "max") {
+        //     right: -128px;
+        // }
+    }
+
+    &-image {
+        height: 100%;
+        position: absolute;
+        right: -132px;
+        top: 0;
+        width: 594px;
+        z-index: -1;
+        background: url("/assets/img/preview/preview-min.png") no-repeat;
+
+        @include media("lg", "max") {
+            right: -288px;
+        }
+
+        @include media("md", "max") {
+            display: none;
+        }
+    }
+}

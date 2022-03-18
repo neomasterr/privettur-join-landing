@@ -1,0 +1,44 @@
+.j-select {
+    &-input {
+        &.is-error {
+        }
+    }
+
+    .j-select-input.is-error + .j-select-value {
+        border-color: var(--color-theme-crimson);
+    }
+
+    &[data-active] {
+        .j-select-value {
+            &::after {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &-value {
+        border-radius: 5px;
+        &::after {
+            background: url("/assets/icons/common/arrow-angle.svg") no-repeat
+                center center;
+            width: 24px;
+            height: 24px;
+            right: 8px;
+            top: 8px;
+            border: none;
+            transform: none;
+            padding: 0;
+            @include transition(0.1s);
+        }
+    }
+
+    &-wrapper {
+    }
+
+    &-items {
+        border-radius: 5px;
+    }
+
+    &-item {
+    }
+}

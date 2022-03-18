@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol viewBox="0 0 18 22" id="example-example" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 1V21M9 1L1 9.05882M9 1L17 9.05882" style="stroke: var(--stroke-color, black)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+</svg>

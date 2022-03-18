@@ -1,0 +1,19 @@
+[data-icon="social-dzen"] {
+    @include svg-social-dzen();
+    @include svg-social-dzen-dims();
+}
+
+[data-icon="social-instagram"] {
+    @include svg-social-instagram();
+    @include svg-social-instagram-dims();
+}
+
+[data-icon="social-vk"] {
+    @include svg-social-vk();
+    @include svg-social-vk-dims();
+}
+
+[data-icon="social-whatsapp"] {
+    @include svg-social-whatsapp();
+    @include svg-social-whatsapp-dims();
+}

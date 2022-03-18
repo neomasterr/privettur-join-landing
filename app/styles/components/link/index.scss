@@ -1,0 +1,6 @@
+.ui-link {
+    &_green {
+        color: var(--color-theme-green);
+        @include underline(var(--color-theme-green));
+    }
+}

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "privettur-icons";
+    src: url("/assets/fonts/icons/index.eot?9zeec0");
+    src: url("/assets/fonts/icons/index.eot?9zeec0#iefix")
+            format("embedded-opentype"),
+        url("/assets/fonts/icons/index.ttf?9zeec0") format("truetype"),
+        url("/assets/fonts/icons/index.woff?9zeec0") format("woff"),
+        url("/assets/fonts/icons/index.svg?9zeec0#pobeda-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "privettur-icons" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: inline-flex;
+    font-size: 24px;
+    // color: #316bff;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.icon-arrow:before {
+    content: "\e900";
+}
+.icon-map-pinline:before {
+    content: "\e907";
+}
+.icon-close-circle:before {
+    content: "\e909";
+}
+.icon-arrow-angle:before {
+    content: "\e90a";
+}

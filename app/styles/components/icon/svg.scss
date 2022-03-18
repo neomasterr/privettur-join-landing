@@ -1,0 +1,13 @@
+// Переменные для смены цвета
+// --circle-color: #808D9A;
+// --path-color: #808D9A;
+// --rect-color: #808D9A;
+
+[data-svg^="example"] {
+    height: 22px;
+    width: 18px;
+    svg {
+        height: 22px;
+        width: 18px;
+    }
+}

@@ -1,0 +1,12 @@
+@import "/node_modules/jcore-ui/lib/styles/mixins/index.scss";
+
+@mixin media(
+    $point_first: "lg",
+    $type_first: "max",
+    $point_second: false,
+    $type_second: false
+) {
+    @include j-media($point_first, $type_first, $point_second, $type_second) {
+        @content;
+    }
+}

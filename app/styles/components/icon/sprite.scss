@@ -1,0 +1,37 @@
+
+@mixin svg-social-dzen {
+	background: url("/assets/sprite/social/view/svg/sprite.view-7ccf449c.svg") 0 0 no-repeat;
+}
+
+@mixin svg-social-dzen-dims {
+	width: 44px;
+	height: 44px;
+}
+
+@mixin svg-social-instagram {
+	background: url("/assets/sprite/social/view/svg/sprite.view-7ccf449c.svg") 100% 0 no-repeat;
+}
+
+@mixin svg-social-instagram-dims {
+	width: 44px;
+	height: 44px;
+}
+
+@mixin svg-social-vk {
+	background: url("/assets/sprite/social/view/svg/sprite.view-7ccf449c.svg") 0 100% no-repeat;
+}
+
+@mixin svg-social-vk-dims {
+	width: 44px;
+	height: 44px;
+}
+
+@mixin svg-social-whatsapp {
+	background: url("/assets/sprite/social/view/svg/sprite.view-7ccf449c.svg") 100% 100% no-repeat;
+}
+
+@mixin svg-social-whatsapp-dims {
+	width: 44px;
+	height: 44px;
+}
+

@@ -1,0 +1,84 @@
+{% set items = [
+    {
+        image: 'https://img.privettur.ru/modules/photogallery/src/images/cache/740817-600-364-2-b4250751.jpg',
+        title: 'Частный сектор <br> «У самого синего моря»',
+        location: 'Красная поляна',
+        requests: '619 заявок в 2021 году',
+        date: 'с 2018 года на ПриветТур.ру'
+    }, {
+        image: 'https://img.privettur.ru/modules/photogallery/src/images/cache/71680-600-364-2-a8774939.jpg',
+        title: 'Гостевой дом <br> «Birlik»',
+        location: 'Судак',
+        requests: '576 заявок в 2021 году',
+        date: 'с 2018 года на ПриветТур.ру'
+    }, {
+        image: 'https://img.privettur.ru/modules/photogallery/src/images/cache/774559-600-364-2-ddbe34cb.jpg',
+        title: 'Мини-гостиница <br> «Святая Абхазия»',
+        location: 'Судак',
+        requests: '498 заявок в 2021 году',
+        date: 'с 2019 года на ПриветТур.ру'
+    }, {
+        image: 'https://img.privettur.ru/modules/photogallery/src/images/cache/607243-600-364-2-471976ea.jpg',
+        title: 'Частный сектор <br> «Ривьера»',
+        location: 'Судак',
+        requests: '487 заявок в 2021 году',
+        date: 'с 2019 года на ПриветТур.ру'
+    }, {
+        image: 'https://img.privettur.ru/modules/photogallery/src/images/cache/539389-600-364-2-2b5e5a9d.jpg',
+        title: 'Гостевой дом <br> «Живите у моря»',
+        location: 'Судак',
+        requests: '496 заявок в 2021 году',
+        date: 'с 2019 года на ПриветТур.ру'
+    }, {
+        image: 'https://img.privettur.ru/modules/photogallery/src/images/cache/474776-600-364-2-7e1566f8.jpg',
+        title: 'Гостевой дом  <br> «Birlik»',
+        location: 'Судак',
+        requests: '541 заявок в 2021 году',
+        date: 'с 2019 года на ПриветТур.ру'
+    }, {
+        image: 'https://img.privettur.ru/modules/photogallery/src/images/cache/664850-600-364-2-b2ded23e.jpg',
+        title: 'Гостевой дом <br> «Birlik»',
+        location: 'Судак',
+        requests: '640 заявок в 2021 году',
+        date: 'с 2019 года на ПриветТур.ру'
+    }
+] %}
+
+<div class="main-client">
+    <div class="j-container main-client-container">
+        <div class="main-client-wrapper">
+            <div class="main-client-title">Наши клиенты</div>
+            <div class="swiper-container main-client__list-wrapper">
+                <div class="swiper-wrapper main-client-list">
+                    {% for item in items %}
+                        <div class="swiper-slide main-client__item">
+                            <div class="main-client__item-image">
+                                <img src="{{ item.image }}" alt="">
+                            </div>
+                            {# twig raw #}
+                            <div class="main-client__item-content">
+                                <div class="main-client__item-title">{{ item.title | safe }}</div>
+                                <div class="main-client__item-location">
+                                    <span class="icon icon-map-pinline"></span>
+                                    <span>{{ item.location }}</span>
+                                </div>
+                                <div class="main-client__item-requests">{{ item.requests }}</div>
+                                <div class="main-client__item-date">{{ item.date }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="swiper-arrow">
+                <div class="swiper-button swiper-button-prev">
+                    <span class="icon icon-arrow"></span>
+                </div>
+                <div class="swiper-button swiper-button-next">
+                    <span class="icon icon-arrow"></span>
+                </div>
+            </div>
+        </div>
+        <div class="main-client-waves-decoration"></div>
+        <div class="main-client-semicircle-decoration"></div>
+    </div>
+</div>

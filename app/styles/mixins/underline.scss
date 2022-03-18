@@ -1,0 +1,21 @@
+@mixin underline($color: #fff, $margin: 0px, $height: 1px) {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        display: block;
+        height: $height;
+        width: 0;
+        left: 0;
+        bottom: #{$margin};
+        position: absolute;
+        transition: all 0.2s ease-in-out;
+        background: $color;
+    }
+
+    &:hover:after {
+        width: 100%;
+        left: 0;
+    }
+}

@@ -1,0 +1,29 @@
+[data-svg-group],
+[data-icon-group] {
+    display: flex;
+    align-items: center;
+
+    [data-icon],
+    [data-svg] {
+        margin-right: 4px;
+    }
+}
+
+[data-svg] {
+    display: inline-flex;
+
+    svg {
+        display: inline-block;
+        flex-shrink: 0;
+    }
+}
+
+[data-icon] {
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+
+@import './sprite.scss';
+@import './icon.scss';
+@import './svg.scss';

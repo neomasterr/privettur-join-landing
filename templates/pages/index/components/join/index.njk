@@ -1,0 +1,26 @@
+{% from "utils/icon.njk" import icon %}
+
+<div class="main-join">
+    <div class="j-container">
+        <div class="main-join-wrapper">
+            <div class="main-join-form">
+                <div class="main-join-title">Присоединяйтесь к 10865 ваших коллег-отельеров уже сейчас</div>
+                <div class="main-join-actions">
+                    <button data-ripplet class="ui-button ui-button_accent ui-button_size-lg" data-modal-target="object">Разместить объект</button>
+                    <button data-ripplet class="ui-button ui-button_neutral ui-button_size-lg" data-modal-target="phone">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="main-join-copy">
+                <div class="main-join-social">
+                    {{ icon("social-whatsapp", null, {'data-href': '#'}) }}
+                    {{ icon("social-vk", null, {'data-href': '#'}) }}
+                    {{ icon("social-instagram", null, {'data-href': '#'}) }}
+                    {{ icon("social-dzen", null, {'data-href': '#'}) }}
+                </div>
+
+                <a>ПриветТур! © 2022</a>
+            </div>
+            {% include "components/footer/index.njk" %}
+        </div>
+    </div>
+</div>

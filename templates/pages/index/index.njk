@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div class="main-page">
+        {% include "pages/index/components/preview/index.njk" %}
+        {% include "pages/index/components/advantage/index.njk" %}
+        {% include "pages/index/components/works/index.njk" %}
+        {% include "pages/index/components/house/index.njk" %}
+        {% include "pages/index/components/cost/index.njk" %}
+        {% include "pages/index/components/client/index.njk" %}
+        {% include "pages/index/components/ask/index.njk" %}
+        {% include "pages/index/components/join/index.njk" %}
+        {% include "components/modal/phone/index.njk" %}
+        {% include "components/modal/object/index.njk" %}
+    </div>
+{% endblock %}

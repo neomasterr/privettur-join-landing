@@ -1,0 +1,1 @@
+import 'ripplet.js/es/ripplet-declarative';

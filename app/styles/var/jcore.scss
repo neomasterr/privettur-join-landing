@@ -1,0 +1,41 @@
+@import "/node_modules/jcore-ui/lib/styles/var";
+
+// BREAKPOINTS
+$j-lg: 1439px;
+$j-md: 1023px;
+$j-sm: 767px;
+$j-xs: 479px;
+
+$j-breakpoints: (
+    "lg": $j-lg,
+    "md": $j-md,
+    "sm": $j-sm,
+    "xs": $j-xs,
+);
+
+// CONTAINERS
+$j-offset: 132px;
+$j-offset-lg: 40px;
+$j-offset-md: 24px;
+$j-offset-sm: 20px;
+$j-offset-xs: 20px;
+
+$j-offsets: (
+    "lg": $j-offset-lg,
+    "md": $j-offset-md,
+    "sm": $j-offset-sm,
+    "xs": $j-offset-xs,
+);
+
+$j-container-width: 1440px;
+$j-container-width-lg: 1024px;
+$j-container-width-md: 768px;
+$j-container-width-sm: 100%;
+$j-container-width-xs: 100%;
+
+$j-containers: (
+    "lg": $j-container-width-lg,
+    "md": $j-container-width-md,
+    "sm": $j-container-width-sm,
+    "xs": $j-container-width-xs,
+);

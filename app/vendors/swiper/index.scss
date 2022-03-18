@@ -1,0 +1,48 @@
+@import "node_modules/swiper/swiper.scss";
+
+.swiper {
+    &-container {
+        height: auto;
+        display: flex;
+
+        &-initialized {
+            .swiper-pagination {
+                display: flex;
+
+                &.swiper-pagination-lock {
+                    display: none;
+                }
+            }
+
+            &.fade {
+                .swiper-slide {
+                    // @include transition(.3s);
+                }
+            }
+        }
+
+        &.fade {
+            .swiper-slide {
+            }
+        }
+
+        &.fade.is-loaded {
+            .swiper-slide {
+                .card {
+                    @include transition(0.3s);
+                }
+            }
+        }
+    }
+
+    &-wrapper {
+        height: auto;
+    }
+
+    &-slide {
+        width: auto;
+        // flex-grow: 1;
+        // flex-shrink: 1;
+        // width: auto;
+    }
+}

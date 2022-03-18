@@ -1,0 +1,54 @@
+.j-modal {
+    max-width: 394px;
+    padding: 24px;
+
+    .j-modal-title {
+        font: var(--text-0-bold);
+        margin-bottom: 24px;
+
+        @include media("sm", "max") {
+            padding-right: 44px;
+            margin-bottom: 8px;
+        }
+    }
+
+    // legacy attr
+    &:not([data-mobile]) {
+        .j-modal-close {
+            &::after,
+            &::before {
+                content: none !important;
+            }
+            background-color: transparent;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: -44px;
+            top: 0;
+
+            .icon {
+                font-size: 32px;
+                color: black;
+
+                @include media("sm", "max") {
+                    font-size: 24px;
+                    color: var(--color-text-grey);
+                }
+            }
+        }
+    }
+
+    .j-modal-body {
+        overflow: initial;
+    }
+
+    .j-modal-footer {
+        margin-top: 16px;
+
+        @include media("sm", "max") {
+            margin-top: 8px;
+        }
+    }
+}

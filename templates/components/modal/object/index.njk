@@ -1,0 +1,66 @@
+<div class="j-modal modal-object" data-name="object">
+    <div class="j-modal-close">
+        <span class="icon icon-close-circle"></span>
+    </div>
+    <div class="j-modal-content">
+        <div class="j-modal-header">Разместить объект</div>
+        <form id="object-form" class="j-modal-body ui-form">
+            <div class="ui-form-field">
+                <div class="ui-input-group">
+                    <label class="ui-input-label ui-input-label_top">Имя</label>
+                    <input class="ui-input" name="name" type="text" placeholder="Имя">
+                    {# <div class="ui-form-field-error">Введите корректные данные</div> #}
+                </div>
+            </div>
+            <div class="ui-form-field">
+                <div class="ui-input-group">
+                    <label class="ui-input-label ui-input-label_top">E-mail</label>
+                    <input class="ui-input" name="email" type="text" placeholder="E-mail">
+                    {# <div class="ui-form-field-error">Введите корректные данные</div> #}
+                </div>
+            </div>
+            <div class="ui-form-field">
+                <div class="ui-input-group">
+                    <label class="ui-input-label ui-input-label_top">Телефон</label>
+                    <input class="ui-input" name="phone" type="text" placeholder="+7">
+                    {# <div class="ui-form-field-error">Введите корректные данные</div> #}
+                </div>
+            </div>
+            <div class="ui-form-field">
+                <div class="ui-input-group">
+                    <label class="ui-input-label ui-input-label_top">Выберите тариф</label>
+                    <div class="j-select">
+                        <input class="j-select-input" name="tarif" value="1"/>
+                        <div class="j-select-value">Стандарт «Номер» - 6900 ₽</div>
+                        <div class="j-select-wrapper">
+                            <div class="j-select-items">
+                                <div class="j-select-item" data-value="0">Стандарт Дом - 3900 ₽</div>
+                                <div class="j-select-item" data-value="1" data-selected>Стандарт «Номер» - 6900 ₽</div>
+                                <div class="j-select-item" data-value="2">Премиум «Всегда в ТОПе» - 18900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    {# <div class="ui-form-field-error">Введите корректные данные</div> #}
+                </div>
+            </div>
+            <div class="ui-form-field">
+                <div class="ui-input-group">
+                    <div class="j-checkbox">
+                        <input class="j-checkbox-input" name="on" type="checkbox"/>
+                        <div class="j-checkbox-wrapper">
+                            <div class="j-checkbox-icon"></div>
+                            <div class="j-checkbox-label">Принимаю условия <a href="https://privettur.ru/about/join/" target="_blank">пользовательского соглашения</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# <div class="ui-form-field">
+                <div class="ui-form-error"></div>
+            </div> #}
+        </form>
+        <div class="j-modal-footer">
+            <button type="submit" form="object-form" data-ripplet class="ui-button ui-button_accent">Привлечь гостей</button>
+        </div>
+    </div>
+</div>

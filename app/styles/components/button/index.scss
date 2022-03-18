@@ -1,0 +1,26 @@
+.ui-button {
+    height: 40px;
+    padding: 0 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font: var(--text-1);
+
+    &_accent {
+        background-color: var(--color-theme-blue);
+        color: var(--color-theme-white);
+    }
+
+    &_neutral {
+        background-color: var(--color-theme-white);
+        color: var(--color-theme-blue);
+        border-color: var(--color-theme-blue);
+    }
+
+    &_size {
+        &-lg {
+            height: 56px;
+            font: var(--text-0-bold);
+            padding: 0 44px;
+        }
+    }
+}

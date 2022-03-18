@@ -1,0 +1,35 @@
+<div class="j-modal modal-phone" data-name="phone">
+    <div class="j-modal-close">
+        <span class="icon icon-close-circle"></span>
+    </div>
+    <div class="j-modal-content">
+        <div class="j-modal-header">Заказать звонок</div>
+        <form id="phone-form" class="j-modal-body ui-form">
+            <div class="ui-form-field">
+                <div class="ui-input-group">
+                    <label class="ui-input-label ui-input-label_top">Телефон</label>
+                    <input class="ui-input" type="text" placeholder="+7">
+                    {# <div class="ui-form-field-error">Введите корректно данные</div> #}
+                </div>
+            </div>
+            <div class="ui-form-field">
+                <div class="ui-input-group">
+                    <div class="j-checkbox">
+                        <input class="j-checkbox-input" name="on" type="checkbox"/>
+                        <div class="j-checkbox-wrapper">
+                            <div class="j-checkbox-icon"></div>
+                            <div class="j-checkbox-label">Принимаю условия <a href="https://privettur.ru/about/join/" target="_blank">пользовательского соглашения</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {# <div class="ui-form-field">
+                <div class="ui-form-error"></div>
+            </div> #}
+        </form>
+        <div class="j-modal-footer">
+            <button form="phone-form" type="submit" data-ripplet class="ui-button ui-button_accent">Заказать звонок</button>
+        </div>
+    </div>
+</div>

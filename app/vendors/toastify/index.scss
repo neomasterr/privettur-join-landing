@@ -1,0 +1,12 @@
+@import "/node_modules/toastify-js/src/toastify.css";
+
+.toastify {
+    max-width: 344px !important;
+    padding-right: 32px;
+
+    .toast-close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+}

@@ -1,0 +1,14 @@
+.ui-form {
+    &-field {
+        margin-bottom: 16px;
+
+        &-error {
+            font: var(--text-2);
+            color: var(--color-theme-crimson);
+            margin-top: 4px;
+        }
+    }
+
+    &-error {
+    }
+}

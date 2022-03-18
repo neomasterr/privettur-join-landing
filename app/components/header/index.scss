@@ -1,0 +1,54 @@
+:root {
+    --header-height: 100px;
+
+    @include media("sm", "max") {
+        --header-height: 56px;
+    }
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px 0;
+        height: var(--header-height);
+
+        @include media("sm", "max") {
+            padding: 8px 0;
+        }
+    }
+
+    &-logo {
+        display: flex;
+        align-items: flex-start;
+        cursor: pointer;
+
+        @include media("sm", "max") {
+            max-width: 152px;
+        }
+    }
+
+    &-auth {
+        display: flex;
+        align-items: center;
+
+        &-label {
+            margin-right: 24px;
+            font: var(--text-1);
+            color: var(--color-theme-dark);
+
+            @include underline(var(--color-theme-dark));
+
+            @include media("sm", "max") {
+                display: none;
+            }
+        }
+    }
+}

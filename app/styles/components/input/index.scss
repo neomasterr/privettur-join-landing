@@ -1,0 +1,41 @@
+.ui-input {
+    border: 1px solid var(--color-theme-grey);
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-theme-greyMedium);
+    height: 40px;
+    padding: 0 16px;
+    font: var(--text-1);
+
+    &.is-error {
+        border-color: var(--color-theme-crimson);
+    }
+
+    &:not(:placeholder-shown) {
+        color: var(--color-theme-dark);
+    }
+
+    &_size {
+        &-lg {
+            height: 56px;
+        }
+    }
+
+    &-group {
+        display: flex;
+        flex-direction: column;
+
+        &.is-error {
+            .ui-input {
+                border-color: var(--color-theme-crimson);
+            }
+        }
+    }
+
+    &-label {
+        font: var(--text-2);
+        color: var(--color-theme-greyMedium);
+        margin-bottom: 4px;
+    }
+}
