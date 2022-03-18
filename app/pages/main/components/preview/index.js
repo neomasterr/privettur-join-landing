@@ -46,3 +46,5 @@ $previewSendCallbackForm.addEventListener('submit', function (e) {
         $previewSendCallbackSubmit.removeAttribute('disabled');
     });
 });
+
+export default function MainPreview() {}

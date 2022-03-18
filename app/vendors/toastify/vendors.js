@@ -1,20 +1,12 @@
+import Toastify from 'toastify-js';
+
 class ToastifyVendor {
     constructor() {
 
     }
 
     async get() {
-        if (window.toastify) {
-            return window.toastify
-        }
-
-        const toastify = await import(/* webpackChunkName: `chunk_toastify` */ 'toastify-js');
-
-        if (window.toastify === undefined) {
-            window.toastify = toastify.default;
-        }
-
-        return window.toastify
+        return Toastify;
     }
 
     async toastError(msg) {

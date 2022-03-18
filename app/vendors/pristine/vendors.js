@@ -1,3 +1,5 @@
+import pristinejs from 'pristinejs';
+
 class PristineVendor {
     constructor() {
         this.options = {
@@ -11,17 +13,7 @@ class PristineVendor {
     }
 
     async get() {
-        if (window.pristine) {
-            return window.pristine
-        }
-
-        const pristine = await import(/* webpackChunkName: `chunk_pristine` */ 'pristinejs');
-
-        if (window.pristine === undefined) {
-            window.pristine = pristine.default;
-        }
-
-        return window.pristine
+        return pristinejs;
     }
 
     phoneValidator(input, formik, opt = {}) {

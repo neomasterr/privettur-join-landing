@@ -1,3 +1,5 @@
+import Swiper, {Navigation} from 'swiper';
+
 class SwiperVendor {
     constructor() {
 
@@ -9,14 +11,12 @@ class SwiperVendor {
                 return resolve(window.swiper)
             }
 
-            import(/* webpackChunkName: `chunk_swiper` */ 'swiper').then(({ Swiper, Navigation }) => {
-                Swiper.use([Navigation]);
-                if (window.swiper === undefined) {
-                    window.swiper = Swiper;
-                }
+            Swiper.use([Navigation]);
+            if (window.swiper === undefined) {
+                window.swiper = Swiper;
+            }
 
-                resolve(Swiper)
-            })
+            resolve(Swiper)
         })
     }
 }
