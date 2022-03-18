@@ -11,7 +11,13 @@ class MainHouse {
 
     addTabs() {
         new jcore.Tab({
-            $element: $('.main-house .j-tabs')
+            $element: $('.main-house .j-tabs'),
+            on: {
+                toggle: (self, tab, content) => {
+                    const $button = self.$tabs.find($tab => $tab.hasAttribute('data-active'));
+                    document.querySelector('.main-house-image img').src = $button.dataset.src;
+                },
+            },
         })
     }
 }
