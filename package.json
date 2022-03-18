@@ -78,6 +78,7 @@
     },
     "dependencies": {
         "express": "^4.17.1",
+        "imask": "^6.4.2",
         "jcore-ui": "^1.1.8",
         "pristinejs": "^0.1.9",
         "swiper": "^6.7.5"

@@ -4,6 +4,7 @@ import MainAsk from "./components/ask";
 import MainClient from "./components/client";
 import MainCost from "./components/cost";
 import MainHouse from "./components/house";
+import MainPreview from "./components/preview";
 
 class MainPage {
     constructor() {
@@ -12,8 +13,8 @@ class MainPage {
 
     init() {
         jcore.dataHref()
-        jcore.mask.phone($('.main-preview input').get());
 
+        new MainPreview();
         new MainCost();
         new MainAsk();
         new MainHouse();

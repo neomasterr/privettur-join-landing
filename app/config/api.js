@@ -2,8 +2,8 @@ import config from "./index";
 
 const api = {
     app: {
-        request_call: config.host + '/app/request_call/',
-        object_place: config.host + '/app/object_place/'
+        request_call: config.host + '/about/join/send_callback/',
+        object_place: config.host + '/about/join/send_new_object/'
     }
 }
 

@@ -5,23 +5,26 @@
                 <div class="main-preview-title">
                     Найдем благодарных гостей для
                     <span class="main-preview-title-decoration" data-display="inline" data-xs="block">Вашего</span>
-                    жилья на <a >ПриветТур.ру</a>
+                    жилья на <a href="https://privettur.ru">ПриветТур.ру</a>
                 </div>
                 <div class="main-preview-label">
                     Поможем и ответим на все вопросы
                 </div>
-                <div class="main-preview-form">
-                    <div class="ui-input-group">
-                        <label class="ui-input-label ui-input-label_top">Телефон</label>
-                        <input class="ui-input ui-input_size-lg" type="text" placeholder="Ваш номер телефона">
+                <form action="/about/join/send_callback/" method="POST" class="js-previewSendCallbackForm">
+                    <input type="hidden" name="check" value="1">
+                    <div class="main-preview-form">
+                        <div class="ui-input-group">
+                            <label class="ui-input-label ui-input-label_top">Телефон</label>
+                            <input class="ui-input ui-input_size-lg js-previewInputPhone" name="phone" type="tel" placeholder="Ваш номер телефона" autocomplete="off">
+                        </div>
+                        <button class="ui-button ui-button_accent ui-button_size-lg" type="submit" data-ripplet>
+                            Заказать звонок
+                        </button>
                     </div>
-                    <button class="ui-button ui-button_accent ui-button_size-lg" data-ripplet data-modal-target="phone">
-                        Заказать звонок
-                    </button>
-                </div>
+                </form>
                 <div class="main-preview-description">
                     закажите звонок, или напишите нам <br> в
-                    <a class="ui-link ui-link_green">WhatsApp</a>
+                    <a href="https://api.whatsapp.com/send/?phone=79181398929&text&app_absent=0" class="ui-link ui-link_green">WhatsApp</a>
                 </div>
             </div>
             <div class="main-preview-waves-decoration"></div>
