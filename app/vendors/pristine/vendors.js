@@ -20,7 +20,7 @@ class PristineVendor {
         const option = Object.assign({
             idx: 1,
             stop: false,
-            message: "Не корректный телефон"
+            message: "Некорректный телефон"
         }, opt)
 
         formik.addValidator(input, function (value) {
