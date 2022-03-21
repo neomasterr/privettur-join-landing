@@ -15,7 +15,7 @@ class ModalPhone {
         this.$name = this.modal.$element.find('input[name="name"]');
         this.$mail = this.modal.$element.find('input[name="email"]');
         this.$phone = this.modal.$element.find('input[name="phone"]');
-        this.$checkbox = this.modal.$element.find('input[name="on"]');
+        this.$checkbox = this.modal.$element.find('input[name="check"]');
         this.$action = this.modal.$element.find('button');
         this.$select = new jcore.Select({
             $element: this.modal.$element.find('.j-select'),
@@ -73,7 +73,7 @@ class ModalPhone {
             email: this.$mail.value,
             tarif: this.$select.value.value,
             phone: this.$phone.value,
-            on: this.$checkbox.get().checked
+            check: this.$checkbox.get().checked
         }).then(res => {
             if (res.status === 'ok') {
                 this.modal.destroy();
