@@ -23,7 +23,13 @@ class MainPage {
         new ModalPhone({
             $inputForPhone: $('.main-preview input')
         });
-        new ObjectPhone();
+
+        const modalObject = new ObjectPhone();
+        document.querySelectorAll('[data-modal-target="object"][data-index]').forEach(($button) => {
+            $button.addEventListener('click', e => {
+                modalObject.select($button.dataset.index);
+            });
+        });
     }
 }
 

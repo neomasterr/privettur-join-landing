@@ -2,6 +2,7 @@ import appSerivce from "../../../services/app";
 import jcoreVendor from "../../../vendors/jcore/vendors";
 import pristineVendor from "../../../vendors/pristine/vendors";
 import toastifyVendor from "../../../vendors/toastify/vendors";
+import Select from '../../select';
 
 class ModalPhone {
     constructor(props = {
@@ -17,7 +18,7 @@ class ModalPhone {
         this.$phone = this.modal.$element.find('input[name="phone"]');
         this.$checkbox = this.modal.$element.find('input[name="check"]');
         this.$action = this.modal.$element.find('button');
-        this.$select = new jcore.Select({
+        this.$select = new Select({
             $element: this.modal.$element.find('.j-select'),
             options: {
                 value: {
@@ -84,6 +85,10 @@ class ModalPhone {
         }).catch(err => {
             toastifyVendor.toastError()
         })
+    }
+
+    select(index) {
+        return this.$select.select(index);
     }
 }
 
