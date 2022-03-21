@@ -56,7 +56,7 @@ class ModalPhone {
     send() {
         appSerivce.requestCall({
             phone: this.$input.value,
-            on: this.$checkbox.get().checked
+            check: this.$checkbox.get().checked ? this.$checkbox.get().value : '',
         }).then(res => {
             if (res.status === 'ok') {
                 this.modal.destroy();

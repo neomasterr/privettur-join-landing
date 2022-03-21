@@ -73,7 +73,7 @@ class ModalPhone {
             email: this.$mail.value,
             tarif: this.$select.value.value,
             phone: this.$phone.value,
-            check: this.$checkbox.get().checked
+            check: this.$checkbox.get().checked ? this.$checkbox.get().value : '',
         }).then(res => {
             if (res.status === 'ok') {
                 this.modal.destroy();
