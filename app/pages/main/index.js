@@ -15,7 +15,8 @@ class MainPage {
         jcore.dataHref()
 
         new MainPreview();
-        new MainCost();
+        // отключаем на 30 дней
+        // new MainCost();
         new MainAsk();
         new MainHouse();
         new MainClient();
